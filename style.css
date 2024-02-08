@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    padding-top: 60px; /* Add padding to the top of the body equal to the navbar height */
+
+  }
+  header, nav, section, footer {
+    display: block;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    text-align: center;
+    padding: 0 20px; /* Add padding to maintain spacing on smaller screens */
+  }
+  .navbar {
+  background-color: #3a5352;
+  color: white;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Stick to the top */
+  left: 0; /* Stretch across the full width of the viewport */
+  width: 100%; /* Full width */
+  z-index: 1000; /* High z-index to stack on top of other content */
+}
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  section {
+    padding: 60px 20px;
+    position: relative;
+  }
+  .about-section {
+    background-color: #3a5352; /* Lighter color from the palette */
+    color: white;
+  }
+  .clients-section {
+    background-color: #f0e0c6; /* Another color from the palette */
+  }
+  .download-section {
+    background-color: #3a5352; /* Dark green from the original palette */
+    color: white;
+  }
+  .contact-section {
+    background-color: #f7f7f7; /* Light background for contrast */
+  }
+  .footer {
+    background-color: #3a4f4c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .contact-form {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .contact-form textarea {
+  	height: 150px;
+  }
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a4f4c;
+    color: white;
+    border: none;
+  }
