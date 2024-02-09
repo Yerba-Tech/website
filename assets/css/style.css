@@ -185,13 +185,25 @@ textarea{
   cursor: pointer;
 }
 
-/* FOOTER  */
+/* FOOTER */
+
 .footer {
-  background-color: var(--green);
-  color: var(--white);
-  padding: 2rem;
   text-align: center;
+  padding: 20px;
+  background-color: var(--green); /* Adjust the color to fit your design */
+  color: white;
 }
+
+.footer a {
+  color: white; /* Icon color */
+  margin: 0 10px; /* Spacing between icons */
+  font-size: 24px; /* Icon size */
+}
+
+.footer a:hover {
+  color: #ddd; /* Icon hover color */
+}
+
 
 /* MEDIA QUERIES   */
 @media (min-width: 900px) {
