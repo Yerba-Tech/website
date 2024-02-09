@@ -11,6 +11,6 @@ buttonNavbar.addEventListener("click", displayNav);
 let actualYear = new Date().getFullYear()
 
 let footerText = document.createElement('p')
-footerText.textContent = `© ${actualYear} Software Factory - Follow us on social media!`
+footerText.textContent = `Todos los derechos reservados © - ${actualYear} | Yerba Tech`
 
 footer.appendChild(footerText)
