@@ -5,6 +5,8 @@
   --green: #3a5352;
   --light-green: #3a4f4c;
   --grey: #333333;
+  --form-color: #fff;
+  --input-border: #ddd;
 
   /* FONT */
   --font: "Montserrat", sans-serif;
@@ -16,13 +18,18 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+
 body {
   font-family: var(--font);
   color: #333;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
-  padding-top: 60px;
+  padding-top: 6rem;
+  font-size: 1.8rem;
 }
 
 header,
@@ -36,8 +43,12 @@ ul {
   list-style: none;
 }
 
+h2{
+  font-size: 4.5rem;
+}
+
 section {
-  padding: 60px 20px;
+  padding: 6rem 2rem;
   position: relative;
 }
 
@@ -56,7 +67,7 @@ textarea{
   flex-direction: column;
   min-height: 50vh;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 /* HEADER - NAVBAR */
@@ -64,7 +75,7 @@ textarea{
 .header {
   background-color: var(--green);
   color: var(--white);
-  height: 90px;
+  height: 9rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +99,7 @@ textarea{
   place-content: center;
   gap: 2rem;
   position: absolute;
-  top: 5.5rem;
+  top: 9rem;
   font-size: 18px;
   text-align: center;
   transition: all 0.5s ease-in-out;
@@ -96,13 +107,13 @@ textarea{
 }
 
 .navbar_links-mostrar {
-  height: calc(50vh - 90px);
+  height: calc(50vh - 9rem);
 }
 
 .header a {
   color: var(--white);
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }
 .header a:hover {
   text-decoration: underline;
@@ -114,15 +125,26 @@ textarea{
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 1rem;
+  padding: 3rem
 }
 
 /* SECTIONS  */
 
+/* ABOUT  */
 .about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   background-color: var(--green);
   color: var(--white);
 }
+
+.about-section p{
+  width: 100%;
+  line-height: 4rem;
+}
+
+/* CLIENTS  */
 .clients-section {
   background-color: var(--cream);
 }
@@ -138,16 +160,16 @@ textarea{
 
 .contact-form {
   max-width: 90%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--form-color);
 }
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
   box-sizing: border-box;
 }
 .contact-form textarea {
@@ -155,22 +177,25 @@ textarea{
 }
 .contact-form button {
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
   background-color: var(--green);
   color: var(--white);
   border: none;
+  cursor: pointer;
 }
 
 /* FOOTER  */
 .footer {
   background-color: var(--green);
   color: var(--white);
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
 }
 
 /* MEDIA QUERIES   */
 @media (min-width: 900px) {
+
+  /* HEADER - NAVBAR */
 
   .btn_hamburger {
     display: none;
@@ -189,6 +214,5 @@ textarea{
     justify-content: flex-end;
     transition: none;
   }
-
   
 }
