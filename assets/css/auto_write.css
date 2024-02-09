@@ -1,0 +1,16 @@
+#typewriter {
+    display: inline-block;
+    font-family: 'Arial', sans-serif; /* Or your preferred font */
+    border-right: 2px solid black; /* A more appropriately-sized cursor */
+    margin-left: 5px; /* Optional: adjust spacing as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-cursor 0.7s steps(1) infinite;
+  }
+  
+  @keyframes blink-cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  

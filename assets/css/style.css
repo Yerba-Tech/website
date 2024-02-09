@@ -68,6 +68,7 @@ textarea{
   min-height: 50vh;
   text-align: center;
   padding: 0 2rem;
+  position: relative;
 }
 
 /* HEADER - NAVBAR */
