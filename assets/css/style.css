@@ -58,6 +58,17 @@ img {
 
 textarea{
   resize: none;
+ 
+}
+
+input,
+textarea{
+  font-family: var(--font);
+  font-size: 1.8rem;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 .hero-section {
@@ -117,7 +128,8 @@ textarea{
   padding: 0 1.5rem;
 }
 .header a:hover {
-  text-decoration: underline;
+  transition: .6s all;
+  color: var(--cream);
 }
 
 /* HAMBURGER BUTTON  */

@@ -1,16 +1,23 @@
 #typewriter {
-    display: inline-block;
-    font-family: 'Arial', sans-serif; /* Or your preferred font */
-    border-right: 2px solid black; /* A more appropriately-sized cursor */
-    margin-left: 5px; /* Optional: adjust spacing as needed */
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blink-cursor 0.7s steps(1) infinite;
+  display: inline-block;
+  font-size: 9vw;
+  font-family: var(--font);
+  border-right: 2px solid var(--green);
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink-cursor 0.7s steps(1) infinite;
+}
+
+/* KEYFRAMES */
+@keyframes blink-cursor {
+  50% {
+    border-color: transparent;
   }
-  
-  @keyframes blink-cursor {
-    50% {
-      border-color: transparent;
-    }
+}
+
+@media (min-width: 900px) {
+  #typewriter{
+    font-size: 6vw;
   }
-  
+}

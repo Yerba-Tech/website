@@ -9,21 +9,17 @@
 
 .leaf {
     width: 50px;
-    /* Size of the leaf */
     height: 50px;
-    /* Size of the leaf */
     background-image: url('../leaf.png');
-    /* Path to the leaf image */
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: -50px;
-    /* Start above the section */
     animation: fall 15s linear infinite;
-    /* Slower timing */
+
 }
 
-/* Adjust the keyframes for a wider horizontal movement */
+/* KEYFRAMES */
 @keyframes fall {
     0% {
         left: calc(0% - 25px);
@@ -43,7 +39,7 @@
     }
 }
 
-/* Leaf rules */
+/* LEAF RULES */
 .leaf:nth-child(1) {
     animation-delay: 0s;
     left: calc(10% - 25px);
