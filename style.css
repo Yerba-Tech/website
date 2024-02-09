@@ -117,7 +117,7 @@ textarea{
   padding: 1rem;
 }
 
-
+/* SECTIONS  */
 
 .about-section {
   background-color: var(--green);
@@ -130,15 +130,12 @@ textarea{
   background-color: var(--green);
   color: var(--white);
 }
+
+/* CONTACT SECTION   */
 .contact-section {
-  background-color: #f7f7f7; /* Light background for contrast */
+  background-color: #f7f7f7;
 }
-.footer {
-  background-color: var(--green);
-  color: var(--white);
-  padding: 20px;
-  text-align: center;
-}
+
 .contact-form {
   max-width: 90%;
   margin: 20px auto;
@@ -164,6 +161,15 @@ textarea{
   border: none;
 }
 
+/* FOOTER  */
+.footer {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES   */
 @media (min-width: 900px) {
 
   .btn_hamburger {
