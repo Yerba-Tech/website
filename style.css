@@ -1,90 +1,188 @@
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    padding-top: 60px; /* Add padding to the top of the body equal to the navbar height */
+:root {
+  /* COLORS */
+  --white: #ffffff;
+  --cream: #f0e0c6;
+  --green: #3a5352;
+  --light-green: #3a4f4c;
+  --grey: #333333;
 
-  }
-  header, nav, section, footer {
-    display: block;
-  }
-  .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 50vh;
-    text-align: center;
-    padding: 0 20px; /* Add padding to maintain spacing on smaller screens */
-  }
-  .navbar {
-  background-color: #3a5352;
-  color: white;
-  padding: 10px 5px;
+  /* FONT */
+  --font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  padding-top: 60px;
+}
+
+header,
+nav,
+section,
+footer {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 60px 20px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+textarea{
+  resize: none;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* HEADER - NAVBAR */
+
+.header {
+  background-color: var(--green);
+  color: var(--white);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; /* Fixed positioning */
-  top: 0; /* Stick to the top */
-  left: 0; /* Stretch across the full width of the viewport */
-  width: 100%; /* Full width */
-  z-index: 1000; /* High z-index to stack on top of other content */
+  flex-wrap: wrap;
+  height: 100%;
 }
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 0 15px;
+
+.navbar_links {
+  width: 100%;
+  height: 0;
+  background-color: var(--green);
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  position: absolute;
+  top: 5.5rem;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.navbar_links-mostrar {
+  height: calc(50vh - 90px);
+}
+
+.header a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 15px;
+}
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* HAMBURGER BUTTON  */
+
+.btn_hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+
+
+.about-section {
+  background-color: var(--green);
+  color: var(--white);
+}
+.clients-section {
+  background-color: var(--cream);
+}
+.download-section {
+  background-color: var(--green);
+  color: var(--white);
+}
+.contact-section {
+  background-color: #f7f7f7; /* Light background for contrast */
+}
+.footer {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+.contact-form {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+}
+
+@media (min-width: 900px) {
+
+  .btn_hamburger {
+    display: none;
   }
-  .navbar a:hover {
-    text-decoration: underline;
+
+  .navbar{
+    flex-wrap: nowrap;
   }
-  section {
-    padding: 60px 20px;
-    position: relative;
+
+  .navbar_links {
+    position: initial ;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    transition: none;
   }
-  .about-section {
-    background-color: #3a5352; /* Lighter color from the palette */
-    color: white;
-  }
-  .clients-section {
-    background-color: #f0e0c6; /* Another color from the palette */
-  }
-  .download-section {
-    background-color: #3a5352; /* Dark green from the original palette */
-    color: white;
-  }
-  .contact-section {
-    background-color: #f7f7f7; /* Light background for contrast */
-  }
-  .footer {
-    background-color: #3a4f4c;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  .contact-form {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-  }
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-  }
-  .contact-form textarea {
-  	height: 150px;
-  }
-  .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3a4f4c;
-    color: white;
-    border: none;
-  }
+
+  
+}

@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style.css">
-<title>Yerba Tech</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Yerba Tech</title>
+  </head>
+  <body>
+    
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="header_logo">
+          <img src="./assets/yerba-tech-logo.png" alt="yerba-tech-logo" />
+        </a>
+        <button class="btn_hamburger" id="button_navbar">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-filled/50/F0E0C6/menu--v1.png"
+            alt="menu--v1"
+          />
+        </button>
 
-<header class="navbar">
-  <div>Software Factory Logo</div>
-  <nav>
-    <a href="#home">Inicio</a>
-    <a href="#about">Acerca</a>
-    <a href="#clients">Clientes</a>
-    <a href="#download">Brief</a>
-    <a href="#contact">Contacto</a>
-  </nav>
-</header>
+        <ul class="navbar_links" id="links">
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Acerca</a>
+          </li>
+          <li>
+            <a href="#clients">Clientes</a>
+          </li>
+          <li>
+            <a href="#download">Brief</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<section id="home" class="hero-section">
-  <h1>Welcome to Software Factory</h1>
-  <p>Empowering Devices and Users</p>
-</section>
+    <!-- HOME SECTION -->
+    <section id="home" class="hero-section">
+      <h1>Welcome to Software Factory</h1>
+      <p>Empowering Devices and Users</p>
+    </section>
 
-<section id="about" class="about-section">
-  <h2>About Us</h2>
-  <p>Learn more about our mission and values.</p>
-</section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>Learn more about our mission and values.</p>
+    </section>
 
-<section id="clients" class="clients-section">
-  <h2>Our Clients</h2>
-  <p>Success stories and case studies.</p>
-</section>
+    <!-- CLIENTS SECTION -->
+    <section id="clients" class="clients-section">
+      <h2>Our Clients</h2>
+      <p>Success stories and case studies.</p>
+    </section>
 
-<section id="download" class="download-section">
-  <h2>Download Brief</h2>
-  <p>Get our company brief and learn more about what we offer.</p>
-</section>
+    <!-- BRIEF SECTION -->
+    <section id="download" class="download-section">
+      <h2>Download Brief</h2>
+      <p>Get our company brief and learn more about what we offer.</p>
+    </section>
 
-<section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <div class="contact-form">
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-    <button>Send Message</button>
-  </div>
-</section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+      </div>
+    </section>
 
-<footer class="footer">
-  &copy; 2024 Software Factory - Follow us on social media!
-  <!-- Social media icons would go here -->
-</footer>
+    <!-- FOOTER SECTION -->
+    <footer class="footer" id="footer">
+      <!-- Social media icons would go here -->
+    </footer>
+  </body>
 
-</body>
+  <!-- JS LOGIC -->
+  <script src="./index.js"></script>
 </html>
