@@ -166,6 +166,33 @@ textarea{
   line-height: 4rem;
 }
 
+/*TECHNOLOGIES */
+.technologies-section{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+#stack-titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+  
+}
+
+
+.stack-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 0.3fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 30px;
+ 
+}
 /* CLIENTS  */
 .clients-section {
   background-color: var(--cream);
