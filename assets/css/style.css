@@ -118,6 +118,10 @@ textarea{
   overflow: hidden;
 }
 
+.hero-section h1{
+  font-weight: 700;
+}
+
 .navbar_links-mostrar {
   height: calc(50vh - 9rem);
 }
@@ -144,6 +148,11 @@ textarea{
 /* SECTIONS  */
 
 /* ABOUT  */
+
+.section-title{
+  font-size: 4rem;
+  text-align:left;
+}
 .about-section {
   display: flex;
   flex-direction: column;
@@ -167,12 +176,14 @@ textarea{
   color: var(--white);
 
 }
+
 #clients-titles{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #clients-titles p {
   text-align: center;
 }
@@ -180,7 +191,7 @@ textarea{
 
 /* CLIENTS CAROUSEL */
 
-h2{
+.client-title{
   text-align:center;
   padding: 20px;
 }
