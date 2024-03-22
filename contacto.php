@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $info = $_POST["info"];
 
     // SQL to insert data into the table
-    $sql = "INSERT INTO contacto (url, mediaUrl) VALUES ('$fullName', '$email', '$company', "$info')";
+    $sql = "INSERT INTO contacto (nombre, email, empresa, consulta) VALUES ('$fullName', '$email', '$company', '$info')";
 
     if ($conn->query($sql) === TRUE) {
         // Record inserted successfully, redirect to index.php
