@@ -206,13 +206,13 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
       <h2 class="section-title">Contactanos</h2>
-      <div class="contact-form">
-        <input type="text" placeholder="Nombre y Apellido" required />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Tu empresa u organización" />
-        <textarea placeholder="Dejanos tu consulta acá."></textarea>
-        <button>Enviar consulta</button>
-      </div>
+      <form  method="post" action="contacto.php" enctype="multipart/form-data" class="contact-form">
+        <input type="text" name="fullName" placeholder="Nombre y Apellido" required />
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" name="company" placeholder="Tu empresa u organización" />
+        <textarea name="info" placeholder="Dejanos tu consulta acá."></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
     </section>
 
     <footer class="footer" id="footer">
